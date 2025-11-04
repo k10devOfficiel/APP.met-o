@@ -73,7 +73,7 @@ async function api(nomVille) {
     let data = await reponse.json();
     console.log(data);
 
-    // Met à jour l'interface (attention aux sélecteurs en minuscules)
+
     document.getElementById('nomVille').textContent = data.name || '';
     document.querySelector('.temp h1').textContent = Math.round(data.main.temp) + '°C';
     const ventP = document.querySelector('.vent p');
