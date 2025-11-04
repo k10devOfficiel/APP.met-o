@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.conteneur {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.cont {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.cont input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.cont input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.cont button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cont button:hover {
+    transform: scale(1.1);
+}
+
+.cont button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.city {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.city h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.city img {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.temp {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.temp h1 {
+    font-size: 64px;
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.temp h3 {
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.description > div {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.description > div:hover {
+    transform: translateY(-5px);
+    background: #f0f0f5;
+}
+
+.description img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.description h4 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+@media (max-width: 480px) {
+    .conteneur {
+        padding: 25px;
+    }
+    
+    .description {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .city h1 {
+        font-size: 26px;
+    }
+    
+    .temp h1 {
+        font-size: 48px;
+    }
+}

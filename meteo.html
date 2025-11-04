@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meteo.css">
+    <title>meteoApi</title>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="cont">
+
+                 <input type="text" placeholder="entrer une ville" required>
+                <button type="submit"><img src="icone/search-engine-optimization.png" alt=""></button>
+                    
+        </div>
+        <div class="CONST">
+                        <div class="erreur"></div>
+                    </div>
+        <div class="city">
+            <h1 id="nomVille"></h1>
+            <img src="icone/nuageux (1).png" alt="nuageux">
+        </div>
+        <div class="temp">
+            <h1></h1>
+            <h3></h3>
+        </div>
+        <div class="description">
+            <div class="vent">
+                <img src="icone/vent.png" alt="vent">
+                <h4>Vent</h4>
+                <P>15km/h</P>
+            </div>
+             <div class="humidité">
+                <img src="icone/humidite.png" alt="humidité">
+                <h4>humidité</h4>
+                <P>60%</P>
+            </div>
+            <div class="pression">
+                <img src="icone/capteur-de-pression.png" alt="pression">
+                <h4>pression</h4>
+                <P>1012hp0</P>
+            </div>
+        </div>
+    </div>
+    <script src="meteo.js"></script>
+</body>
+</html>
